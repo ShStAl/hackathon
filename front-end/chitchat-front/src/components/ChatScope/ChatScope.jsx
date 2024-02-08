@@ -25,7 +25,7 @@ export default function Chatscope() {
     };
     try {
       const response = await axios.post(
-        "http://3.253.244.247:8080/start_chat",
+        "https://3.253.244.247:8080/start_chat",
         chatInstruction
       );
       setChatId(response.data.chat_id);
